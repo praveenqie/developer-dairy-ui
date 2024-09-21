@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Add New Course</h2>
+<div mat-dialog-content>
+  <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+    <mat-form-field class="full-width">
+      <mat-label>Course Name</mat-label>
+      <input matInput formControlName="courseName" type="text" placeholder="Enter course name">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Course Description</mat-label>
+      <textarea matInput formControlName="courseDescription" placeholder="Enter course description"></textarea>
+    </mat-form-field>
+    
+     
+     <div class="full-width">
+        <input formControlName="courseImage" type="file" (change)="onFileChange($event)">
+      </div>
+    <div mat-dialog-actions>
+      <button mat-button type="button" (click)="onNoClick()">Cancel</button>
+      <button mat-button type="submit" [disabled]="!courseForm.valid">Add Course</button>
+    </div>
+  </form>
+</div>

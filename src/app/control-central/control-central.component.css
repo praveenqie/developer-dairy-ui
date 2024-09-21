@@ -1,0 +1,11 @@
+/* control-central.component.css */
+.control-central-container {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 250px; /* Adjust based on the sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust to fill the rest of the space */
+  }
+  

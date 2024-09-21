@@ -1,0 +1,42 @@
+/* control-central-sidebar.component.css */
+.sidebar {
+    width: 220px;
+    background-color: #f4f4f4;
+    padding: 16px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    top: 64px; /* Adjust this if your top bar is different */
+    left: 0;
+  }
+  
+  .sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #2980b9; /* Color and thickness of the underline */
+    padding-bottom: 8px; /* Space between the text and the underline */
+    margin-bottom: 16px; /* Space below the underline */
+    padding-left: 10px;
+  }
+  .sidebar h2 {
+    margin-top: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  height: 64px;
+  width: 100%;
+  background-color: #2980b9;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0; /* Remove padding to ensure elements are aligned correctly */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 0; /* Ensure no space between logo and edge */
+  flex-shrink: 0; /* Prevents logo container from shrinking */
+}
+
+.logo {
+  width: 120%; /* Set the width of the logo */
+  height: 64px; /* Adjusted height to match navbar height */
+}
+
+.topbar-tabs {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes items to the right */
+}
+
+.search-container {
+  position: relative; /* Allows positioning of the search button inside the input */
+  margin-right: 16px; /* Space between search container and tabs */
+}
+
+.search-input {
+  padding: 8px;
+  padding-right: 40px; /* Add space for the search button inside the input */
+  border: none;
+  border-radius: 4px;
+  max-width: 200px; /* Adjust as needed */
+}
+
+.search-button {
+  position: absolute;
+  right: 8px; /* Position button inside input */
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.topbar-tab {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.topbar-tab:hover {
+  background-color: #1abc9c;
+}
+
+.content {
+  padding: 20px;
+  margin-top: 32px; /* Offset for the top navbar height */
+}

@@ -1,0 +1,82 @@
+<div class="course-management-console">
+    <h6>COURSE MANAGEMENT CONSOLE</h6>
+</div>
+<div class="header-actions">
+  <div class="search-bar-container">
+    <input type="text" class="search-input" placeholder="Search courses">
+    <button class="search-button">🔍</button>
+  </div>
+  <button class="add-course-button" (click)="openDialog()">Add Course</button>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <div class="box" (click)="editCourse()">>
+        <img src="assets/course1.jpg" alt="Course 1" class="course-image">
+        <h3>Course 1</h3>
+        <p>Short description of Course 1.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box">
+        <img src="assets/course2.jpg" alt="Course 2" class="course-image">
+        <h3>Course 2</h3>
+        <p>Short description of Course 2.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box">
+        <img src="assets/course3.jpg" alt="Course 3" class="course-image">
+        <h3>Course 3</h3>
+        <p>Short description of Course 3.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="box">
+        <img src="assets/course4.jpg" alt="Course 4" class="course-image">
+        <h3>Course 4</h3>
+        <p>Short description of Course 4.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box">
+        <img src="assets/course5.jpg" alt="Course 5" class="course-image">
+        <h3>Course 5</h3>
+        <p>Short description of Course 5.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="box">
+        <img src="assets/course6.jpg" alt="Course 6" class="course-image">
+        <h3>Course 6</h3>
+        <p>Short description of Course 6.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="manage-course-container">
+    <h2>Add New Course</h2>
+    <form [formGroup]="courseForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="courseName">Course Name</label>
+        <input id="courseName" formControlName="courseName" type="text" placeholder="Enter course name">
+      </div>
+      
+      <div class="form-group">
+        <label for="courseImage">Course Image</label>
+        <input id="courseImage" formControlName="courseImage" type="file" (change)="onFileChange($event)">
+      </div>
+      
+      <div class="form-group">
+        <label for="courseDescription">Course Description</label>
+        <textarea id="courseDescription" formControlName="courseDescription" placeholder="Enter course description"></textarea>
+      </div>
+      
+      <button type="submit" class="submit-button" [disabled]="!courseForm.valid">Add Course</button>
+    </form>
+  </div> -->
+  

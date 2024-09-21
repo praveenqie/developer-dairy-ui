@@ -1,0 +1,18 @@
+<div class="topbar">
+  <div class="logo-container">
+    <img src="../code journal.png" alt="Logo" class="logo">
+  </div>
+  <div class="topbar-tabs">
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="Search" />
+      <button class="search-button">🔍</button>
+    </div>
+    <a [routerLink]="'/courses'" class="topbar-tab">Courses</a>
+    <a [routerLink]="'/profile'" class="topbar-tab">Profile</a>
+    <a [routerLink]="'/admin'" class="topbar-tab">Admin</a>
+    <a [routerLink]="'/interview'" class="topbar-tab">Interview Questions</a>
+  </div>
+</div>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
